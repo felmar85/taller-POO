@@ -1,0 +1,155 @@
+<!-- * PROGRMAMA: notas.html
+* OBJETIVO: Calcaular notas
+* FECHA: 12-09-2019
+* PROGRAMADOR: Felipe Martinez -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Notas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>NOTAS</h1>   
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="panel-group"><div class="panel panel-primary">
+            <div class="panel-heading">Datos Notas</div>
+            <div class="panel-body">
+
+
+                <center><h1>Notas Tecnologia Sistemas de Informacion</h1></center>
+                <hr><hr>
+
+                <form class="form-horizontal" role="form" action="../php/notas.php" method="POST">
+
+                    <div class="form-group">
+
+                            <label for="nombre1" class="col-sm-1 control-label"></label>
+                        <label for="nombre1" class="col-sm-2 control-label">Nota 1</label>
+                       
+                        <label for="nombre1" class="col-sm-2 control-label">Nota 2</label>
+                      
+                        <label for="nombre1" class="col-sm-2 control-label">Nota 3</label>
+                       
+                        <label for="nombre1" class="col-sm-2 control-label">Nota 4</label>
+
+                      <!--   <label for="nombre1" class="col-sm-2 control-label">Nota Final</label> -->
+                      
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="consolidado 1" class="col-sm-2 control-label">Consolidado 1:</label>
+                        <div class="col-sm-1">
+                            <input type="text" class="form-control" id="c1n1" name="c1n1" placeholder="Digite inventario inicial">
+                        </div>
+
+                        <label for="invinicial2" class="col-sm-1 control-label"></label>
+                        <div class="col-sm-1">
+                            <input type="text" class="form-control" id="c1n2" name="c1n2" placeholder="Digite inventario inicial">
+                        </div>
+                        
+
+                        <label for="invinicial3" class="col-sm-1 control-label"></label>
+                        <div class="col-sm-1">
+                            <input type="text" class="form-control" id="c1n3" name="c1n3" placeholder="Digite inventario inicial">
+                        </div>
+                        
+
+                        <label for="invinicial4" class="col-sm-1 control-label"></label>
+                        <div class="col-sm-1">
+                            <input type="text" class="form-control" id="c1n4" name="c1n4" placeholder="Digite inventario inicial">
+                        </div>
+           <!--              
+                        <label for="notafinal" class="col-sm-1 control-label"></label>
+                        <div class="col-sm-1">
+                            <input type="text" class="form-control" id="final1" name="final1">
+                        </div> -->
+                        
+
+                       
+
+                    </div>
+                      
+                
+                
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="consolidado 2">Consolidado  2:</label>
+                        <div class="col-sm-1">
+                            <input type="text" class="form-control" id="c2n1" name="c2n1" placeholder="Digite Numero Inicial Operarios">
+                        </div>
+
+                        <label class="control-label col-sm-1" for="c2n2"></label>
+                        <div class="col-sm-1">
+                            <input type="text" class="form-control" id="c2n2" name="c2n2" placeholder="Digite Numero Inicial Operarios">
+                        </div>
+
+                        <label class="control-label col-sm-1" for="c2n3"></label>
+                        <div class="col-sm-1">
+                            <input type="text" class="form-control" id="c2n3" name="c2n3" placeholder="Digite Numero Inicial Operarios">
+                        </div>
+
+                        <label class="control-label col-sm-1" for="c2n4"></label>
+                        <div class="col-sm-1">
+                            <input type="text" class="form-control" id="c2n4" name="c2n4" placeholder="Digite Numero Inicial Operarios">
+                        </div>
+  <!--              
+                        <label for="notafinal" class="col-sm-1 control-label"></label>
+                        <div class="col-sm-1">
+                            <input type="text" class="form-control" id="final1" name="final1">
+                        </div> -->
+                        
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="consolidado 3">Consolidado 3:</label>
+                        <div class="col-sm-1">          
+                            <input type="text" class="form-control" id="c3n1" name="c3n1" placeholder="Digiste numero de operarios constante">
+                        </div>
+
+                        <label class="control-label col-sm-1" for="c3n2"></label>
+                        <div class="col-sm-1">          
+                            <input type="text" class="form-control" id="c3n2" name="c3n2" placeholder="Digiste numero de operarios constante">
+                        </div>
+
+                        <label class="control-label col-sm-1" for="c3n3"></label>
+                        <div class="col-sm-1">          
+                            <input type="text" class="form-control" id="c3n3" name="c3n3" placeholder="Digiste numero de operarios constante">
+                        </div>
+
+                        <label class="control-label col-sm-1" for="c3n4"></label>
+                        <div class="col-sm-1">          
+                            <input type="text" class="form-control" id="c3n4" name="c3n4" placeholder="Digiste numero de operarios constante">
+                        </div>
+  <!--              
+                        <label for="notafinal" class="col-sm-1 control-label"></label>
+                        <div class="col-sm-1">
+                            <input type="text" class="form-control" id="final1" name="final1">
+                        </div> -->
+                        
+                    </div>
+
+                     
+                                    
+                    
+                    <div class="form-group">        
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary">Calcular</button>
+                            <a class="btn btn-primary" href="../html/detalles.html" role="button">Detalles Notas</a>
+                            <a class="btn btn-primary" href="../index.html" role="button">Listado de Programas</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
